@@ -17,18 +17,18 @@
 
 
 
-document.getElementById("meaning-container").style.display = "none";
+// document.getElementById("meaning-container").style.display = "none";
 async function getMeaning(){
     const input = document.getElementById("input").value;
     if(input.length >0){
         try{
-            const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/${input}';
+            const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${input}`;
             const response = await axios.get(url);
             const data = response.data[0];
             console.log(response);
             
 
-            document.getElementById("meaning-container").style.display = "block";
+            // document.getElementById("meaning-container").style.display = "block";
 
             document.getElementById("word").innerHTML = data.word;
             document.getElementById("definition").innerHTML = data.meanings[0].definitions[0].definition;
