@@ -1,0 +1,249 @@
+ @import url('https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap');
+ 
+body{
+    font-family: sora, "sans-serif";
+    line-height: 1.7;
+    color: #888;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-4{
+    color: #21252f;
+    font-weight: 700;
+}
+a{
+    color: #21252f;
+    text-decoration: none;
+}
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/Prepare-And-Pass-WAEC-Examination-2021.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+.navbar{
+    box-shadow: #888;
+}
+
+.logos{
+    width: 20%;
+}
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.card-effect{
+     box-shadow: 0 8px 22px rgb(0,0,0,0.1);
+     background-color: whitesmoke;
+     padding: 25px;
+     transition: all 0.35s ease;
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+.service{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.service::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: blue;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+
+
+}
+
+.service:hover.iconbox{
+    background-color:blue;
+    color: white
+}
+.service:hover h5,
+.service:hover p{
+    color: white;
+}
+.service:hover::after{
+    opacity: 1;
+    top: 0;
+}
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.w-100{
+    height: 100vh;
+    
+}
+    
+
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    color:rgb(51, 159, 123);
+}
+.carousel-caption h4{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    color: rgb(15, 168, 168);
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.a{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* pro */
+
+img{
+    width: 100%;
+}
+.project{
+    position: relative;
+    overflow: hidden;
+}
+.project .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(21,20,51,0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.project img{
+    transition: all 0.4s ease;
+}
+.project:hover .overlay{
+    opacity: 1;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+
+
+/* abot */
+
+.col-img{
+    background-image: url(images/images\ \(9\).jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+
+}
+span{
+    color: rgb(163, 21, 21);
+}
+
+/* footer */
+
+.footer-top{
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: #1c7ab1;
+}
+.footer-top a{
+    color:#888;
+}
+.footer-top a:hover{
+    color: #fff;
+}
+.footer-bottom{
+    background-color: whitesmoke;
+}
+.socialicons{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+
+/* footer- bottom */
+
+
+
+
+
+/* header */
+
+header{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #232836;
+}
+form{
+    margin-top: 30px;
+}
+
+
+
+
+    
+
+
+
+
